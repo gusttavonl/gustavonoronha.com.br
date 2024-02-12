@@ -1,0 +1,21 @@
+{
+  "name": "Gustavo Noronha WebSite",
+  "short_name": "Gustavo Noronha",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FF7818",
+  "description": "Software Engineer",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#FF7818"
+}
