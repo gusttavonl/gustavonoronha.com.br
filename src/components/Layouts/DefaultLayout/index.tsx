@@ -1,3 +1,4 @@
+import Header from '@/components/header'
 import * as S from './styles'
 
 type DefaultLayoutProps = {
@@ -7,7 +8,7 @@ type DefaultLayoutProps = {
 const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <S.Layout>
-      <S.Header>Header</S.Header>
+      <Header />
       <S.Content>{children}</S.Content>
     </S.Layout>
   )
