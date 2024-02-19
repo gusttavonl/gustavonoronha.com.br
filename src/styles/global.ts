@@ -58,7 +58,7 @@ const GlobalStyles: GlobalStyleComponent<
 
       ${!removeBg &&
       css`
-        background-color: ${theme.colors.gray800};
+        background-color: black;
       `}
     }
 
