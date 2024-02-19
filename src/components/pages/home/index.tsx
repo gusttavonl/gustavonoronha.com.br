@@ -1,10 +1,21 @@
+import { useRouter } from 'next/router'
 import * as S from './styles'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const HomeComponent = () => {
+  const router = useRouter()
+  const navigate = (route: string) => {
+    router.replace(origin, route)
+  }
   return (
     <S.Container>
-      <S.Title>Gustavo Noronha</S.Title>
-      <S.SubTitle>Software Engineer & Content Creator</S.SubTitle>
+      <S.Main>
+        <S.Img src="img/gustavo.jpg" />
+        <S.Titles>
+          <S.Title>Gustavo Noronha</S.Title>
+          <S.SubTitle>Software Engineer & Content Creator</S.SubTitle>
+        </S.Titles>
+      </S.Main>
       <S.About>
         {`
         Hello! I'm Gustavo Noronha, a software engineer with a passion for technology. With six years of experience, I've worked across diverse industries, specializing in areas such as payments, management software, streaming, and credit.
@@ -16,7 +27,10 @@ const HomeComponent = () => {
         Beyond my professional endeavors, I'm also a content creator on YouTube, where I share insights on technology and personal development.
         `}
       </S.About>
-      <S.Contact>Contact</S.Contact>
+      <S.Contact onClick={() => navigate('contact')}>
+        <FaExternalLinkAlt />
+        <S.ContactText>Contact</S.ContactText>
+      </S.Contact>
     </S.Container>
   )
 }
