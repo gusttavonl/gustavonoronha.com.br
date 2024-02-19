@@ -3,13 +3,13 @@
   "short_name": "Gustavo Noronha",
   "icons": [
     {
-      "src": "/img/logo.png",
-      "type": "image/png",
+      "src": "/img/gustavo.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "/img/logo.png",
-      "type": "image/png",
+      "src": "/img/gustavo.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
