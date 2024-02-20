@@ -10,6 +10,7 @@ const Header = () => {
     <S.Container>
       <S.Menu>
         <S.Items>
+          <S.Item onClick={() => navigate('')}>Home</S.Item>
           <S.Item onClick={() => navigate('blog')}>Blog</S.Item>
           <S.Item onClick={() => navigate('projects')}>Projects</S.Item>
           <S.Item onClick={() => navigate('videos')}>Videos</S.Item>
