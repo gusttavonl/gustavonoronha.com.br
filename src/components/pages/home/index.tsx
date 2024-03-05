@@ -1,11 +1,10 @@
-import { useRouter } from 'next/router'
 import * as S from './styles'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const HomeComponent = () => {
-  const router = useRouter()
-  const navigate = (route: string) => {
-    router.replace(origin, route)
+  const navigate = () => {
+    const linkedinUrl = 'https://www.linkedin.com/in/gusttavonl/'
+    window.open(linkedinUrl, '_blank')
   }
   return (
     <S.Container>
@@ -27,7 +26,7 @@ const HomeComponent = () => {
         Beyond my professional endeavors, I'm also a content creator on YouTube, where I share insights on technology and personal development.
         `}
       </S.About>
-      <S.Contact onClick={() => navigate('contact')}>
+      <S.Contact onClick={navigate}>
         <FaExternalLinkAlt />
         <S.ContactText>Contact</S.ContactText>
       </S.Contact>
