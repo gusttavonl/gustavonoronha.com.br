@@ -21,7 +21,9 @@ const HomeComponent = () => {
 
         My expertise extends to both front-end and back-end development, with proficiency in languages like JavaScript, Rust, Go, and Python, as well as technologies such as React. I have a strong background in building microservices architectures and implementing messaging systems.
 
-        While serving as the Chief Technology Officer (CTO) of my own company, I've led the successful development of our Learning Management System (LMS) from inception to deployment. Additionally, I currently hold the position of tech lead at another company, where I oversee project development, mentor team members, and tackle complex challenges.
+        While serving as the Chief Technology Officer (CTO) of my own company, I've led the successful development of our Learning Management System (LMS) from inception to deployment. Additionally, I currently hold the position of tech lead at a streaming company, where I oversee project development, mentor team members, and tackle complex challenges.
+
+        Furthermore, I work as a Senior Backend Engineer at a betting company, where I utilize microservices and Node.js to deliver robust and scalable solutions.
 
         Beyond my professional endeavors, I'm also a content creator on YouTube, where I share insights on technology and personal development.
         `}
