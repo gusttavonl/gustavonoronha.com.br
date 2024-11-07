@@ -2,10 +2,10 @@ import * as S from './styles'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const HomeComponent = () => {
-  const navigate = () => {
-    const linkedinUrl = 'https://www.linkedin.com/in/gusttavonl/'
-    window.open(linkedinUrl, '_blank')
+  const navigate = (url: string) => {
+    window.open(url, '_blank')
   }
+
   return (
     <S.Container>
       <S.Main>
@@ -26,11 +26,19 @@ const HomeComponent = () => {
         Furthermore, I work as a Senior Backend Engineer at a betting company, where I utilize microservices and Node.js to deliver robust and scalable solutions.
 
         Beyond my professional endeavors, I'm also a content creator on YouTube, where I share insights on technology and personal development.
+
+        I am also the founder of MeuMelhorTreino.com.br, a platform that generates personalized workout and diet plans using artificial intelligence to help users achieve their fitness goals effectively.
         `}
       </S.About>
-      <S.Contact onClick={navigate}>
+      <S.Contact
+        onClick={() => navigate('https://www.linkedin.com/in/gusttavonl/')}
+      >
         <FaExternalLinkAlt />
         <S.ContactText>Contact</S.ContactText>
+      </S.Contact>
+      <S.Contact onClick={() => navigate('https://www.meumelhortreino.com.br')}>
+        <FaExternalLinkAlt />
+        <S.ContactText>Meu Melhor Treino</S.ContactText>
       </S.Contact>
     </S.Container>
   )
