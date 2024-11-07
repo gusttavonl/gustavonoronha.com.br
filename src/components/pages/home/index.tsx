@@ -28,16 +28,20 @@ const HomeComponent = () => {
         I am also the founder of MeuMelhorTreino.com.br, a platform that generates personalized workout and diet plans using artificial intelligence to help users achieve their fitness goals effectively.
         `}
       </S.About>
-      <S.Contact
-        onClick={() => navigate('https://www.linkedin.com/in/gusttavonl/')}
-      >
-        <FaExternalLinkAlt />
-        <S.ContactText>Contact</S.ContactText>
-      </S.Contact>
-      <S.Contact onClick={() => navigate('https://www.meumelhortreino.com.br')}>
-        <FaExternalLinkAlt />
-        <S.ContactText>Meu Melhor Treino</S.ContactText>
-      </S.Contact>
+      <S.ContactArea>
+        <S.Contact
+          onClick={() => navigate('https://www.linkedin.com/in/gusttavonl/')}
+        >
+          <FaExternalLinkAlt />
+          <S.ContactText>Contact</S.ContactText>
+        </S.Contact>
+        <S.Contact
+          onClick={() => navigate('https://www.meumelhortreino.com.br')}
+        >
+          <FaExternalLinkAlt />
+          <S.ContactText>Meu Melhor Treino</S.ContactText>
+        </S.Contact>
+      </S.ContactArea>
     </S.Container>
   )
 }
