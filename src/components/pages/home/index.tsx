@@ -12,7 +12,7 @@ const HomeComponent = () => {
         <S.Img src="img/gustavo.jpg" />
         <S.Titles>
           <S.Title>Gustavo Noronha</S.Title>
-          <S.SubTitle>Software Engineer & Content Creator</S.SubTitle>
+          <S.SubTitle>Software Engineer & Founder</S.SubTitle>
         </S.Titles>
       </S.Main>
       <S.About>
